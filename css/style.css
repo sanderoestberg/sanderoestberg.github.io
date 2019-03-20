@@ -54,7 +54,7 @@ img {
     color: black;
 }
 
-a {
+.burger a {
     text-decoration: none;
     color: #232323;
 
@@ -73,7 +73,6 @@ a:hover {
 
     z-index: 1;
 
-    -webkit-user-select: none;
     user-select: none;
 }
 
@@ -87,7 +86,6 @@ a:hover {
     cursor: pointer;
     opacity: 0;
     z-index: 2;
-    -webkit-touch-callout: none;
 }
 
 #menuToggle span {
@@ -141,7 +139,6 @@ a:hover {
 
     background: #f3f3f3;
     list-style-type: none;
-    -webkit-font-smoothing: antialiased;
 
     transform-origin: 0% 0%;
     transform: translate(-100%, 0);
@@ -233,7 +230,7 @@ a:hover {
 
 .article-container {
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 4rem;
     grid-template-areas:
         'article-box-a article-box-b'
         'article-box-d article-box-c'
@@ -241,11 +238,16 @@ a:hover {
 
 }
 
-.article-container img {}
+.article-container h2 {
+    font-size: 200%
+}
+
+.article-container p {
+    line-height: 1.5;
+}
 
 .article-box-a {
     grid-area: article-box-a;
-    padding: 3rem;
 }
 
 
