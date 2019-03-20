@@ -2,7 +2,6 @@
 :root {
     --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
 }
-
 html {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
@@ -14,19 +13,6 @@ body {
     line-height: 1.4;
 }
 
-<<<<<<< HEAD
-/*COMMENTS WITH CAPITAL LETTERS ARE EASY TO SPOT, SO USE THEM FOR HEADINGS FOR OVERVIEW. IT IS A GOOD IDEA TO HAVE A HEADING FOR YOUR HEADER, NAVIGATION, MAIN AND FOOTER. SEE EXAMPLE BELOW*/
-/*
-*{
-    margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-*/
-=======
 .btn {
     background: #fff;
     padding: 0.6rem 1.3rem;
@@ -37,7 +23,6 @@ body {
 img {
     max-width: 100%;
 }
->>>>>>> 95baa92b97e492137bca10272b081085a9ad953a
 
 .wrapper {
     display: grid;
@@ -64,7 +49,9 @@ img {
     box-shadow: var(--shadow);
     color: black;
 }
-
+.showcase a{
+    color: black;
+}
 .main-nav a:hover {
     background: #8c8c8c;
 }
@@ -170,18 +157,48 @@ img {
     color: #fff;
 }
 
+.article-container{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+        'article-box-a article-box-b'
+        'article-box-d article-box-c'
+        
+        
+}
+.article-container img{ 
+}
+.article-box-a{
+    grid-area: article-box-a;
+
+}
+
+    
+.article-box-b{
+    grid-area: article-box-b;
+    box-shadow: var(--shadow);
+}
+
+article-box-c{
+    grid-area: article-box-c;
+    box-shadow: var(--shadow);
+}
+
+.article-box-d{
+    grid-area: article-box-d;
+}
+
+
 @media (max-width: 500px) {
     .top-container {
         grid-template-areas:
             'showcase'
             'top-box-a'
-            'top-box-b';
+            'top-   box-b';
     }
 
     .main-nav a {
         padding: 0.2rem;
         font-size: 0.8rem;
     }
-
-
 }
